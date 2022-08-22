@@ -31,6 +31,7 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
 .imagenes-index {
     display: flex;
     margin: 15px;
@@ -38,6 +39,7 @@ h1 {
     width: 300px;
     height: 300px;
 }
+
 .P {
     background-color: brown;
     font-size: larger;
@@ -83,25 +85,65 @@ main {
     justify-content: space-around;
     font-weight: bold;
 }
+
 .grid-container {
     max-width: 850px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
 
+.tienda:hover {
+    transform: scale(1.2);
+}
+
+.grid-container img:hover {
+    transform: skew(15deg);
+    transition: .3s;
+}
+
+.busca:hover {
+    animation-name: formColor;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes formColor {
+    0% {
+        background-image: rgb(104, 239, 116);
+    }
+
+    50% {
+        background-image: rgb(116, 179, 116);
+        transform: scale(1.2);
+    }
+
+    100% {
+        background-color: green;
+
+    }
+}
+
 @media(max-width: 885px) {
-    .header,.footer{
+
+    .header,
+    .footer {
         flex-direction: column;
     }
 }
-@media(max-width: 785px){
-    .grid-container, .imagenes-index{
-        grid-template-columns: repeat(1,1fr);
+
+@media(max-width: 785px) {
+
+    .grid-container,
+    .imagenes-index {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-@media(max-width: 590px){
-    .img-taller1, .img-taller2{
-        grid-template-columns: repeat(1,1fr);
+
+@media(max-width: 590px) {
+
+    .img-taller1,
+    .img-taller2 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
