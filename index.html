@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Cerámica</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link=Estilo de boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
@@ -40,11 +43,53 @@
         <hr>
         <p>Algunos de nuestros productos mas elegidos</p>
         <hr>
-        <div class="imagenes-index">
-            <img src="../Imagenes/images.jpg" alt="Taza ceramica">
-            <img src="../Imagenes/bowls ceramica.jpg" alt="Bowl ceramica">
-            <img src="../Imagenes/plato ceramica.jpg" alt="Plato de ceramica">
+
+       <!-- INICIO DE CARDS -->
+       <div class="row">
+        <div class="card m-4" style="width: 18rem;">
+            <img src="../Imagenes/images.jpg" class="card-img-top" alt="Taza cerámica">
+            <div class="card-body">
+                <h5 class="card-title">Taza cerámica</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn-card">VER MAS</a>
+            </div>
         </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <img src="../Imagenes/bowls ceramica.jpg" class="card-img-top" alt="Bowls cerámica">
+            <div class="card-body">
+                <h5 class="card-title">Bowls cerámica</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn-card">VER MAS</a>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <img src="../Imagenes/plato ceramica.jpg" class="card-img-top" alt="Plato cerámica">
+            <div class="card-body">
+                <h5 class="card-title">Plato cerámica</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn-card">VER MAS</a>
+            </div>
+        </div>
+
+        <div class="card m-4" style="width: 18rem;">
+            <img src="../Imagenes/bowl ceramica" class="card-img-top" alt="Bowl cerámica">
+            <div class="card-body">
+                <h5 class="card-title">Bowl cerámica</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn-card">VER MAS</a>
+            </div>
+        </div>
+    </div> 
         <br><br><br>
         <p></p>
     </main>
@@ -59,6 +104,10 @@
         <br>
         <p class="despedida">Gracias por tu visita :)</p>
     </footer>
+     <!-- script= componente de boostrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+     crossorigin="anonymous"></script>
 </body>
 
 </html>

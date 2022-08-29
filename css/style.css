@@ -93,7 +93,7 @@ main {
     justify-items: center;
 }
 
-.tienda:hover {
+/* .tienda:hover {
     transform: scale(1.2);
 }
 
@@ -105,16 +105,29 @@ main {
 .busca:hover {
     animation-name: formColor;
     animation-iteration-count: infinite;
-    animation-duration: 4s;
+    animation-duration: 4s; */
+/* } */
+.row{
+    display: flex;
+    justify-content: center;}
+
+.card-title{
+    color: #7F5539;
+    text-align: center;
+}
+
+#carouselExampleControls{
+    justify-content: center;
+    display: flex;
 }
 
 @keyframes formColor {
     0% {
-        background-image: rgb(104, 239, 116);
+        color: rgb(104, 239, 116);
     }
 
     50% {
-        background-image: rgb(116, 179, 116);
+        color: rgb(116, 179, 116);
         transform: scale(1.2);
     }
 
